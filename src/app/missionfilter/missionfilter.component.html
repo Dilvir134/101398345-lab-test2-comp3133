@@ -1,0 +1,5 @@
+<form (submit)="sendData()">
+  <label for="year">Filter by Launch Year: </label>
+  <input id="year" type="text" [(ngModel)]="inputData" name="inputField" required />
+  <button type="submit">Send</button>
+</form>

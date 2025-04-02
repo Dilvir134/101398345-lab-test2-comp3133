@@ -1,0 +1,39 @@
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>Launch Details</mat-card-title>
+      <mat-card-subtitle>Flight Number: {{data.flight_number}}</mat-card-subtitle>
+      <mat-card-subtitle>Mission Name: {{data.mission_name}}</mat-card-subtitle>
+      <mat-card-subtitle>Launch Year: {{data.launch_year}}</mat-card-subtitle>
+      <img mat-card-sm-image src="{{data.links.mission_patch_small}}"  alt="mission_logo">
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    {{data.details}}
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>Rocket</mat-card-title>
+      <mat-card-subtitle>Rocket Name: {{data.rocket.rocket_name}}</mat-card-subtitle>
+      <mat-card-subtitle>Rocket Type: {{data.rocket.rocket_type}}</mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
+</mat-card>
+
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>Links</mat-card-title>
+      <mat-card-subtitle><a href="{{data.links.mission_patch_small}}" target="_blank">mission_patch_small</a></mat-card-subtitle>
+      <mat-card-subtitle><a href="{{data.links.article_link}}" target="_blank">article_link</a></mat-card-subtitle>
+      <mat-card-subtitle><a href="{{data.links.wikipedia}}" target="_blank">wikipedia</a></mat-card-subtitle>
+      <mat-card-subtitle><a href="{{data.links.video_link}}" target="_blank">video_link</a></mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
+</mat-card>
+
+<a routerLink="/" mat-raised-button>Back</a>
+
