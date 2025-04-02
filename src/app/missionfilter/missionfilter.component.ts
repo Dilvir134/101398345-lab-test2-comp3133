@@ -12,8 +12,6 @@ export class MissionfilterComponent {
   inputData: string = '';
 
   sendData() {
-    if (this.inputData.trim()) {
-      this.launchYear.emit(this.inputData);
-    }
+    this.launchYear.emit(this.inputData);
   }
 }

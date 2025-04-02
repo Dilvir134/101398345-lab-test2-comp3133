@@ -17,15 +17,11 @@ export class MissionlistComponent {
   constructor(private apiClient: ApiClientService, private router: Router) {  }
 
   ngOnInit() {
-    this.getFilteredLaunches()
+    this.getAllLaunches()
   }
 
   ngOnChanges() {
-    if (this.filter === '') {
-      this.getAllLaunches()
-    } else {
-      this.getFilteredLaunches()
-    }
+    this.getFilteredLaunches()
   }
 
   getAllLaunches() {
